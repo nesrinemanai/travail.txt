@@ -1,0 +1,22 @@
+ Les Étapes pour convertir une table relationnelle en RDF:
+
+1-Identifier les sujets
+Chaque ligne de la table devient une ressource RDF unique (Sujet).
+
+2-Définir les prédicats
+Chaque colonne de la table devient une propriété RDF (Prédicat).
+
+3-Attribuer les objets
+Les valeurs des cellules deviennent les objets RDF, soit des littéraux (texte, nombre) soit d’autres ressources.
+
+4-Créer des URI
+Pour chaque Sujet et Prédicat, il faut définir des URI uniques pour garantir l’identification globale des ressources.
+
+5-Choisir un format RDF
+RDF peut être représenté dans différents formats : Turtle, RDF/XML, JSON-LD, etc.
+
+6-Générer les triplets
+Combiner Sujet – Prédicat – Objet pour chaque cellule afin de créer l’ensemble des triplets RDF.
+
+7-Automatiser la conversion (optionnel)
+Pour de grandes tables, utiliser des outils comme D2RQ, R2RML, OpenRefine RDF pour effectuer la transformation automatiquement.
